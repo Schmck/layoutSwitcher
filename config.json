@@ -1,0 +1,14 @@
+{
+    "layout_change_reqs": {
+        "to_fill": "",
+        "to_regular": ""
+    },
+    "webadmin_address": "",
+    "server_address": "",
+    "webadmin_creds": {
+        "username": "",
+        "password": ""
+    },
+    "command_channel_id": "",
+    "discord_token": ""
+}
