@@ -132,12 +132,12 @@ discord.on('debug', info => {
 })
 
 discord.on('message', async message  => {
-    if((message.channel.id === config.command_channel_id || message.channel.id === '672136816257794078') && message.content.indexOf('!') === 0) {
+    if((message.channel.id === config.command_channel_id || message.channel.id === '675022637801537559') && message.content.indexOf('!') === 0) {
         const command = message.content.toString().split(' ')
         switch(command[0]) {
             case '!restart': {
                 fs.writeFile('./layout.md', "test", () => {
-                    console.log('restarting script')
+                    console.log(`${getDateTime()}| restarting layoutSwitcher.js`)
                 })
                 message.channel.send('restarting the script!').catch(console.error);
             } break;
